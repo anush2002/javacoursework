@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendyThreads</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9964e735a4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   
+    <section id="header">
+        <a href="#"> <img src="images/logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contactus.htm">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class="active" href="cart.html">
+                <li><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+
+
+            </ul>
+        </div>
+    </section>
+
+    <!-----creating first section of website------------------------------------------>
+    <section id="shop-page" class="aboutheader">
+        <h2> #Get Your Products Delivered Home - Add to Cart Now!"</h2>
+        <p>TRENDYTHREADS</p>
+    </section>
+    <!----------------making add to cart section--------------------------->
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product Detail</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle" onclick="removeProduct()"></i></a> </td>
+                    <td><img src="images/male1.png" alt=""></td>
+                    <td>plane white T-Shirt</td>
+                    <td>Rs.650</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.650</td>
+                </tr>
+                <!---------1 cart-------------->
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a> </td>
+                    <td><img src="Newimage/s1.png" alt=""></td>
+                    <td>plane Cotton T-Shirt</td>
+                    <td>Rs.850</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.850</td>
+                </tr>
+                <!--------------2 cart------------------------->
+                <tr>
+                    <td><a href=""><i class="far fa-times-circle"></i></a> </td>
+                    <td><img src="Newimage/s2.png" alt=""></td>
+                    <td>plane White Shirt</td>
+                    <td>Rs.850</td>
+                    <td><input type="number" value="1"></td>
+                    <td>Rs.950</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <!-------------------Checkout section------------------------------------>
+    <section id="payment" class="section-p1">
+        <div id="total">
+            <h3>Cart total</h3>
+            <table>
+                <tr>
+                    <td>Subtotals</td>
+                    <td>Rs.1750</td>
+                </tr>
+                <tr>
+                    <td>Delivery Charge</td>
+                    <td>Rs.100</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><strong>Rs.1850<strong></td>
+                </tr>
+            </table>
+            <button class="normal">confirm payment</button>
+        </div>
+    </section>
+    <!-------footer section---------------------->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="images/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>kathmandu, Baneshwor</p>
+            <p><strong>Phone:</strong>+977 9861526920</p>
+            <div class="follow">
+                <h4>follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Shop</a>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View cart</a>
+            <a href="#">Help</a>
+
+        </div>
+        <div class="payment">
+            <p>secure payment gateway</p>
+            <img src="images/payment gateway.png" alt="">
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>&copy; 2023 My Clothing Store. All rights reserved.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

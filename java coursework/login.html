@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TrendyThreads</title>
+</head>
+<body>
+ <script src="script.js"></script>
+ <div class="container2">
+ <div class="main1">
+    <!--The aria-hidden="true" attribute is used to tell screen readers to ignore the label for the checkbox since it is not intended to be read aloud.------>
+    <input type="checkbox" id="chk" aria-hidden="true">
+    <div class="signup">
+        <form action="signup" method="post">
+            <label for="chk" aria-hidden="true"> Sign up </label>
+            <input type="text" name="txt"placeholder="User name" required="">
+            <input type="email" name="email" placeholder="Email" required="">
+            <input type="password" name="pswd" placeholder="Password" required="">
+                <input type="file" required>
+            <button class="singn">Sign up</button>
+        </form>
+    </div>
+<!-------------login part---------------->
+    <div class="login">
+        <form action="login" method="post">
+            <label for="chk" aria-hidden="true"> Login </label>
+            <input type="email" name="email"placeholder="Email" required="">
+            <input type="password" name="pswd"placeholder="Password" required="">
+            <button class="log">Login</button>
+        </form>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,892 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+/* using h1 as a global whenever we h1 this style is added*/
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+/* using h2 as a global whenever we h2 this style is added*/
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+/* using h4 as a global whenever we h4 this style is added*/
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+/* using p as a global whenever we p this style is added*/
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0px 20px 0px;
+
+
+}
+/* whenever we use these class padding will added used for easiness*/
+.section-p1 {
+    padding: 40px 80px;
+}
+/* whenever we use these class margin will added used for easiness*/
+.section-m1 {
+    margin: 40px 0px;
+}
+/* whenever we use these class style will added for any image class used for easiness*/
+.col img {
+    width: 150px;
+    height: 50px;
+}
+/* whenever we use these class style will added for the button where we  used .normal class */
+button.normal {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+/* whenever we use these class style will added for the button where we  used .abnormal class */
+button.abnormall {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+}
+
+body {
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+    width: 150px;
+}
+
+/* styling he nav bar  */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: skyblue;
+    transition: 0.3 ease;
+}
+
+#navbar li a.active::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(skyblue);
+    position: absolute;
+    left: 20px;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+
+/* styling the first section of the website/ honme   */
+#main {
+    background-image: url(images/mainback.jpeg);
+    height: 99vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#main h4 {
+    padding-bottom: 15px;
+
+
+}
+
+#main h2 {
+    color: darkcyan;
+}
+
+.btn2 {
+    background-image: url(images/btn.png);
+    background-color: transparent;
+    color: black;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#main button:hover {
+    color: darkcyan;
+}
+/* making search button*/
+#searchbar{
+    border-radius: 55px;
+    display: flex;
+}
+#searchbar i{
+    margin-top: 20px;
+    margin-left: 20px;
+    background: none;
+
+}
+#searchbar input{
+    font-size: 20px;
+    width: 0px;
+    border: 0;
+    background: transparent;
+    outline: none;
+
+}
+.animated input{
+    width: 500px;
+}
+/* Adveritse section means our features */
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .feature-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+
+}
+
+#feature .feature-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .feature-box h5 {
+    display: inline-block;
+    padding: 9px, 8px, 6px, 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: darkcyan;
+    background-color: #fddde4;
+}
+
+/* featured product section designing*/
+
+#product1 {
+    text-align: center;
+
+}
+
+#product1 .product {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 20px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    position: relative;
+    transition: 0.2s ease;
+
+}
+
+#product1 .product:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.09);
+
+}
+
+#product1 .product img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .product .description {
+    text-align: start;
+    padding: 10px 0;
+
+}
+
+#product1 .product .description span {
+    color: #606060;
+    font-size: 12px;
+}
+
+#product1 .product .description h5 {
+    padding: 1px;
+    color: #1a1a1a;
+    font-size: 14px;
+
+}
+
+#product1 .product .description i {
+    font-size: 12px;
+    color: rgb(243, 181, 25);
+}
+
+#product1 .product .description h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: darkcyan;
+}
+
+#product1 .product .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 1500;
+    color: darkcyan;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+#product1 .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/*designnig the discount banner in this section*/
+#discount-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(images/b4.png);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#discount-banner h4 {
+    color: darkcyan;
+    font-size: 16px;
+}
+
+#discount-banner h2 {
+    font-size: 30px;
+    padding: 10px 0;
+}
+
+#discount-banner h2 span {
+    color: red;
+}
+
+#discount-banner button:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+#fe-banner {
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+#fe-banner .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(images/b3.png);
+    min-width: 580px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 30px;
+}
+
+#fe-banner .banner2 {
+    background-image: url(images/b6.png);
+}
+
+#fe-banner h4 {
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+#fe-banner .banner:hover button {
+    background-color: darkcyan;
+    border: 1px solid darkcyan;
+}
+
+/* send email section designing*/
+#email {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(images/b4.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 20px;
+
+}
+
+#email h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+}
+
+#email p {
+    font-size: 12px;
+    font-weight: 600;
+    color: #8183a0;
+}
+
+#email p span {
+    color: orange;
+}
+
+#email input {
+    height: 3.125rem;
+    padding: 0 1.2em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#email button {
+    background-color: darkcyan;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#email .form {
+    display: flex;
+    width: 40%;
+}
+
+
+#email button:hover {
+    color: black;
+
+}
+
+
+/* footer section designing*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer.follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: skyblue;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: darkcyan;
+}
+
+footer .payment img {
+    width: 400px;
+    height: 100px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* home page design end here*/
+
+
+/*designing the shop page from here*/
+#shop-page {
+    background-image: url(images/shopb.png);
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-size: cover;
+    padding: 14px;
+
+}
+
+#shop-page h2,
+#shop-page p {
+    color: white;
+}
+
+#page {
+    text-align: center;
+}
+
+#page a {
+    text-decoration: none;
+    background-color: grey;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    color: black;
+}
+
+/* making single product part*/
+#detail .singleproduct img {
+    height: 600px;
+    width: 500px;
+    margin-top: -30px;
+}
+
+#detail .singleproduct {
+    width: 40%;
+    margin-right: 50px;
+}
+
+#detail {
+    display: flex;
+    margin: 20px;
+}
+
+#detail .singleproduct {
+    width: 50%;
+    padding: 30px;
+}
+
+#detail .singledetails h4 {
+    padding: 40px 0 20px 0;
+
+}
+
+#detail .singledetails h2 {
+    font-size: 26px;
+
+}
+
+#detail .singledetails select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+
+}
+
+#detail .singledetails input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#detail .singledetails button {
+    background-color: darkcyan;
+    color: white;
+}
+
+#detail .singledetails button:hover {
+    color: black;
+}
+
+#detail .singledetails span {
+    line-height: 25px;
+
+}
+
+/* designing the blog section */
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .blogpart {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#blog .blogpart .blogimage {
+    width: 50%;
+    margin-right: 40px;
+}
+
+#blog img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#blog .textblog {
+    width: 50%;
+}
+
+#blog .textblog a {
+    text-decoration: none;
+    font-size: 11px;
+    color: black;
+    font-weight: 700;
+    position: relative;
+    transition: 0.4s;
+}
+
+/*creating a line in continue reading button*/
+/*#blog .textblog a::after {
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    top: 6px;
+    right: -60px;
+}*/
+
+#blog .textblog a:hover {
+    color: darkcyan;
+}
+
+/*about us section designin*/
+#aboutus {
+    display: flex;
+    align-items: center;
+}
+
+#aboutus img {
+    width: 50%;
+    height: 400px;
+}
+
+#aboutus div {
+    padding-left: 40px;
+
+}
+
+/*designing contactus part from here*/
+#form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form form h2 {
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+
+#form form input {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+}
+
+#form form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+}
+
+#form form button {
+    background-color: darkcyan;
+}
+
+#form form button:hover {
+    color: white;
+}
+
+/*contact page ends here and cart page satar */
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 40px;
+}
+
+/*adding custom width using sudo element, child class*/
+
+#cart table td:nth-child(1) {
+    width: 100px;
+    text-align: center;
+}
+
+#cart table td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(3) {
+    width: 250px;
+    text-align: center;
+}
+
+#cart table td:nth-child(4) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+
+}
+
+#cart table td:nth-child(6) {
+    width: 150px;
+    text-align: center;
+}
+
+#cart table thead {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    background-color: darkcyan;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+
+#cart tbody tr td {
+    padding-top: 15px;
+}
+
+#cart tbody td {
+    font-size: 13px;
+}
+#total{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    padding: 30px;
+    margin-left: 300px;
+}
+#total table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+#total table td{
+    width: 50%;
+    border: 1px solid black;
+    padding:10px;
+    font-size: 13px;
+}
+#total h3{
+    padding-bottom: 15px;
+}
+#total button{
+    background-color: darkcyan;
+}
+#total button:hover{
+    color: white;
+}
+
+/*login page design star from here*/
+
+.container2 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom,
+        #0f0c29, #302b63, #24243e);
+}
+.main1 {
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(to bottom,
+    #0f0c29, #302b63, #24243e);
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px #000;
+}
+#chk {
+    display: none;
+}
+.signup  {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+label {
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+input {
+    width: 60%;
+    height: 40px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+/*designing both butto at onces*/
+.signup button, .login button {
+    width: 40%;
+    height: 50px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #573b8a;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+.signup button, .login button:hover {
+    background: #6d44b8;
+}
+.login {
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+.login label {
+    color: #573b8a;
+    transform: scale(.6);
+}
+#chk:checked ~ .login {
+    transform: translateY(-500px);
+}
+#chk:checked ~ .login label {
+    transform: scale(1);
+}
+#chk:checked ~ .signup label {
+    transform: scale(.6);
+}
